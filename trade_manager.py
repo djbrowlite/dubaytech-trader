@@ -35,4 +35,15 @@ def simular_resultado(op):
         return "Pérdida"
 
 def guardar_en_historial(op, resultado):
-    with open("logs
+    with open("logs/operaciones.csv", mode="a", newline="") as file:
+        writer = csv.writer(file)
+        writer.writerow([
+            datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
+            op["symbol"],
+            op["precio_entrada"],
+            op["sl"],
+            op["tp"],
+            op["lotaje"],
+            op["modo"],
+            resultado
+        ])
