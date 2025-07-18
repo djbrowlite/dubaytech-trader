@@ -1,6 +1,5 @@
 import requests
 import json
-import os
 
 # Cargar configuración
 with open("config.json") as f:
