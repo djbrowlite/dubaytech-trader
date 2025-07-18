@@ -6,7 +6,7 @@ echo Activando entorno virtual...
 call .venv\Scripts\activate.bat
 
 echo Instalando dependencias...
-pip install pandas requests oandapyV20
+pip install pandas requests
 
 echo Entorno listo. Puedes ejecutar el bot con: python main.py
 pause
