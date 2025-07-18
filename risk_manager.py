@@ -1,5 +1,4 @@
 import pandas as pd
-import numpy as np
 
 def calcular_atr(data, period=14):
     data['H-L'] = data['high'] - data['low']
